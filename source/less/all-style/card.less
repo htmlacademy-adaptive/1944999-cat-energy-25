@@ -1,0 +1,41 @@
+.card {
+  width: 100%;
+  .border-bottom();
+}
+
+.card__wrapper {
+  .wrapper();
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: min(140px) min(140px);
+  grid-template-rows: min-content min-content min-content;
+  padding-bottom: 28px;
+  padding-top: 28px;
+}
+
+.card__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  max-width: 76px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.card__image {
+  grid-row: 2 span;
+  align-self: center;
+  justify-self: center;
+}
+
+.card__button {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  justify-self: center;
+}
