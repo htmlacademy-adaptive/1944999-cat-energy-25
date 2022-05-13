@@ -1,6 +1,5 @@
 .human-parameters-data {
   .border-bottom();
-  width: 100%;
 }
 
 .human-parameters-data__wrapper {
@@ -26,7 +25,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  width: 226px;
+  max-width: 226px;
 }
 
 .human-parameters-data__label {
@@ -76,4 +75,41 @@
   text-transform: uppercase;
   color: #222222;
   align-items: center;
+}
+
+// tablet
+@media (min-width:@width-tablet) {
+  .human-parameters-data__wrapper {
+    padding-right: 37px;
+    padding-left: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .human-parameters-data__form-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .human-parameters-data__text {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
+
+  .human-parameters-data__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: auto 13px auto 0;
+  }
+
+  .human-parameters-data__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .select-programm__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -4,23 +4,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper">
-      <a class="logo logo__link" href="index.html">
-        <img src="img/logo-header.svg" alt="Логотип Cat Energy." width="34" height="38">
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-header-descktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+          <img src="img/logo-header.svg" alt="Логотип Cat Energy." width="34" height="38">
+        </picture>
       </a>
-      <a class="logo logo__link" href="index.html">
+      <a class="header__logo-text" href="index.html">
         <img src="img/logo-cat-energy.svg" alt="Логотип" width="101" height="18">
       </a>
-      <nav class="navigation navigation__wrapper">
-        <button class="menu-button" type="button">
-          <img src="img/mobile-menu.svg" alt="Меню">
-        </button>
+      <nav class="navigation">
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item navigation__current">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+          <button class="navigation__menu-button" type="button">
+            <img src="img/mobile-menu.svg" alt="Меню">
+          </button>
+        </div>
       </nav>
     </div>
   </header>
@@ -51,34 +67,31 @@
       </section>
 
       <section class="select-programm">
-        <div class="select-programm__wrapper">
-          <div class="select-programm__container-input-radio">
-            <label class="select-programm__label">
-              <input class="select-programm__radio-hidden  visually-hidden" type="radio" name="programm" value="slim">
-              <span class="select-programm__radio select-programm__radio--select"></span>
-              <p class="select-programm__title">Похудение</p>
-            </label>
-            <label class="select-programm__label">
-              <input class="select-programm__radio-hidden visually-hidden" type="radio" name="programm"
-                value="weight-gain">
-              <span class="select-programm__radio select-programm__radio--select"></span>
-              <p class="select-programm__title">Набор массы</p>
-            </label>
-            <label class="select-programm__label">
-              <input class="select-programm__radio-hidden  visually-hidden" type="radio" name="programm"
-                value="dont-know">
-              <span class="select-programm__radio select-programm__radio--select"></span>
-              <p class="select-programm__title">Не знаю (нужен ваш совет)</p>
-            </label>
-          </div>
+        <div class="select-programm__wrapper select-programm__border">
+          <label class="select-programm__label">
+            <input class="select-programm__radio-hidden  visually-hidden" type="radio" name="programm" value="slim"
+              checked>
+            <span class="select-programm__radio select-programm__radio--select"></span>
+            <p class="select-programm__title">Похудение</p>
+          </label>
+          <label class="select-programm__label">
+            <input class="select-programm__radio-hidden visually-hidden" type="radio" name="programm"
+              value="weight-gain">
+            <span class="select-programm__radio select-programm__radio--select"></span>
+            <p class="select-programm__title">Набор массы</p>
+          </label>
+          <label class="select-programm__label">
+            <input class="select-programm__radio-hidden  visually-hidden" type="radio" name="programm"
+              value="dont-know">
+            <span class="select-programm__radio select-programm__radio--select"></span>
+            <p class="select-programm__title">Не знаю (нужен ваш совет)</p>
+          </label>
         </div>
       </section>
 
       <section class="form-contacts">
+        <h2 class="form-contacts__title">Контактные данные (владельца кота)</h2>
         <div class="form-contacts__wrapper">
-          <h2 class="form-additionally__title">Контактные данные
-          </h2>
-          <p class="form-additionally__subtitle">(владельца кота)</p>
           <ul class="form-contacts__list">
             <li class="form-contacts__item">
               <label class="form-contacts__label">
@@ -100,8 +113,8 @@
       </section>
 
       <section class="form-comment">
+        <h2 class="form-comment__title">Комментарий</h2>
         <div class="form-comment__wrapper">
-          <h2 class="form-comment__title">Комментарий</h2>
           <label class="form-comment__label">
             <input class="form-comment__input" type="text" name="comment"
               placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОДВАЛАХ КОТА">
@@ -111,9 +124,8 @@
       </section>
 
       <section class="form-additionally">
+        <h2 class="form-additionally__title">Дополнительно</h2>
         <div class="form-additionally__wrapper">
-          <h2 class="form-additionally__title">Дополнительно
-          </h2>
           <ul class="form-additionally__list">
             <li class="form-additionally__item">
               <label class="form-additionally__label">

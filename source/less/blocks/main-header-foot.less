@@ -1,0 +1,109 @@
+.main-header-foot {
+  background: url("../../img/index-background-main-header-cat-mask.png") no-repeat top, url("../../img/index-background-main-header-cat.png") no-repeat top;
+  background-position: top;
+}
+
+.main-header-foot__wrapper {
+  .wrapper ();
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 480px
+}
+
+.main-header-foot__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.main-header-foot__title {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  min-width: 250px;
+  min-height: 72px;
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.main-header-foot__slogan {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main-header-foot__image {
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  background-image: url("../../img/index-background-main-header-cat-energy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 167px;
+}
+
+.main-header-foot__program {
+  position: absolute;
+  bottom: 0;
+}
+
+//tablet
+
+@media (min-width:@width-tablet) {
+  .main-header-foot {
+    background-image: none;
+  }
+
+  .main-header-foot__container {
+    align-items: flex-start;
+    padding-left: 87px;
+    color: #000000;
+    box-sizing: border-box;
+  }
+
+  .main-header-foot__title {
+    font-family: @font-family-Oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    width: 70%;
+  }
+
+  .main-header-foot__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-header-foot__image {
+    position: relative;
+    width: 709px;
+    height: 609px;
+    background-image: url("../../img/tablet-index-background-main-header-cat-energy.png");
+    top: 0;
+  }
+
+  .main-header-foot__program {
+    position: absolute;
+    left: 120px;
+    top: 34%;
+    width: 244px;
+    height: 54px;
+  }
+
+}

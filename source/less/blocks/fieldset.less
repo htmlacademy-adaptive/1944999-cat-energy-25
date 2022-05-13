@@ -1,13 +1,8 @@
-.fieldset {
+.fieldset__wrapper {
+  margin-bottom: 20px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
-}
-
-.fieldset__wrapper {
-  .wrapper();
-  margin-bottom: 20px;
-  max-width: 280px;
-  min-height: 70px;
 }
 
 .fieldset__item {
@@ -48,4 +43,27 @@
   margin-bottom: 8px;
   position: relative;
   top: 10px;
+}
+
+
+// tablet
+@media (min-width:@width-tablet) {
+  .fieldset__wrapper {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .fieldset__item {
+    min-width: 162px;
+    margin-right: 42px;
+  }
+
+  .fieldset__legend {
+    font-size: 14px;
+    line-height: 14px;
+    min-width: max-content;
+    position: relative;
+    bottom: 5px;
+    padding: 0 9px;
+  }
 }

@@ -1,0 +1,40 @@
+.header {
+  .border-bottom();
+  width: 100%;
+}
+
+.header__wrapper {
+  .wrapper ();
+  margin-bottom: 18px;
+  display: flex;
+  height: 38px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//tablet
+
+@media (min-width:@width-tablet) {
+  .header__wrapper {
+    display: flex;
+    padding: 0;
+  }
+
+  .header__logo img {
+    min-width: 174px;
+    min-height: 51px;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+
+}
+
+//desktop
+@media (min-width:@width-desktop) {
+  .header__logo img {
+    min-width: 202px;
+    min-height: 60px;
+  }
+}

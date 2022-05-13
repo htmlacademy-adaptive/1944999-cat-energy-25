@@ -1,15 +1,11 @@
-.select-programm__ {
-  width: 100%;
+.select-programm {
+  .border-bottom ();
 }
 
 .select-programm__wrapper {
   .wrapper();
 }
 
-.select-programm__container-input-radio {
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
 
 .select-programm__label {
   display: flex;
@@ -44,4 +40,22 @@
   transform: translate(-6.5px, -6.5px);
   background: #68b738;
   border-radius: 50%;
+}
+
+//tablet
+
+@media (min-width:@width-tablet) {
+  .select-programm__wrapper {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0 27px;
+  }
+
+  .select-programm__border {
+    border: 1px solid #e7e7e7;
+  }
+
+  .form-additionally__title {
+    flex-direction: column;
+  }
 }

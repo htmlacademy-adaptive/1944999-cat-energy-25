@@ -19,5 +19,23 @@ body {
   padding-top: 10px;
   margin: 0 auto;
   align-items: center;
-  // outline: 2px solid red;
+}
+
+//tablet
+
+@media (min-width:@width-tablet) {
+  body {
+    width: @width-tablet;
+    padding-top: 24px;
+    box-sizing: border-box;
+  }
+}
+
+
+//desktop
+@media (min-width:@width-desktop) {
+  body {
+    width: @width-desktop;
+    padding-top: 53px;
+  }
 }
