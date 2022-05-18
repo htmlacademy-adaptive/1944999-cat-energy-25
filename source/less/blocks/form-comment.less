@@ -48,11 +48,17 @@
 //tablet
 
 @media (min-width:@width-tablet) {
+  .form-comment__wrapper {
+    .wrapper(padding-left);
+  }
+
   .form-comment__title {
+    margin: 0;
     font-size: 36px;
     line-height: 36px;
     grid-template-columns: minmax(auto, 20px) minmax(min-content, max-content) minmax(min-content, auto);
     margin-left: 0;
+    margin-bottom: 76px;
     box-sizing: border-box;
     align-items: center;
     gap: 0;
@@ -68,6 +74,24 @@
       background-color: #68b738;
       margin-right: 39px;
       width: 20px;
+    }
+  }
+
+  .form-comment__input {
+    margin-bottom: 65px;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .form-comment {
+    grid-column: 2 span;
+  }
+
+  .form-comment__title {
+    &::before {
+      width: 70px;
     }
   }
 }

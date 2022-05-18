@@ -1,7 +1,6 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 
@@ -50,12 +49,7 @@
 
 // tablet
 @media (min-width:@width-tablet) {
-  .footer__wrapper {
-    padding-right: 37px;
-    padding-left: 40px;
-    margin: 0 30px;
-    width: 100%;
-  }
+  .footer__wrapper {}
 
   .footer__invitation {
     min-height: 199px;
@@ -79,4 +73,27 @@
     padding: 0 40px;
   }
 
+  .footer__maps {
+    min-height: 396px;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__invitation {
+    position: absolute;
+    background-color: #ffffff;
+    width: 565px;
+    top: 10%;
+    padding: 0 80px;
+  }
+
+  .footer__text {
+    text-align: start;
+  }
 }

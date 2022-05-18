@@ -1,5 +1,7 @@
 .form-additionally__wrapper {
   .wrapper();
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 
 .form-additionally__title {
@@ -12,8 +14,8 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  margin: 0 0 34px 20px;
-  padding-top: 26px;
+  padding: 0;
+  margin-left: 20px;
 
   &::after {
     display: block;
@@ -37,7 +39,6 @@
 
 .form-additionally__list {
   .list-reset();
-  margin-bottom: 34px;
 }
 
 .form-additionally__item {
@@ -65,9 +66,39 @@
   margin-left: 18px;
 }
 
+.form-additionally__label {
+  cursor: pointer;
+}
+
+.form-additionally__checkbox {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  position: relative;
+}
+
+.form-additionally__label input:checked+.form-additionally__checkbox::before {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 19px;
+  background: url("../../img/checkbox-select.svg") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 //tablet
 
 @media (min-width:@width-tablet) {
+  .form-additionally__wrapper {
+    padding-bottom: 54px;
+    padding-top: 57px;
+  }
+
   .form-additionally__title {
     font-size: 36px;
     line-height: 36px;
@@ -76,6 +107,7 @@
     box-sizing: border-box;
     gap: 0;
     align-items: center;
+    padding-top: 0;
 
     &::after {
       transform: translateY(0);
@@ -94,17 +126,37 @@
 
   .form-additionally__list {
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 123px;
+    grid-template-columns: repeat(auto-fill, minmax(221px, 1fr));
+    column-gap: 104px;
     row-gap: 32px;
-    justify-content: start;
-
+    justify-content: space-between;
   }
-
-  .form-additionally__item {}
 
   .form-additionally__text {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form-additionally__checkbox {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-additionally__label input:checked+.form-additionally__checkbox::before {
+    background: url("../../img/checkbox-select-tablet.svg") no-repeat;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .form-additionally {
+    grid-column: 2 span;
+  }
+
+  .form-additionally__title {
+    &::before {
+      width: 70px;
+    }
   }
 }

@@ -57,3 +57,20 @@
 }
 
 // desktop
+@media (min-width:@width-desktop) {
+  .navigation__list {
+    min-width: 478px;
+  }
+
+  .navigation__link--desktop {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .navigation__current--desktop {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}

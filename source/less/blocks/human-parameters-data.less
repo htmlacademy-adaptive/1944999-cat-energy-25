@@ -4,6 +4,7 @@
 
 .human-parameters-data__wrapper {
   .wrapper ();
+  margin-bottom: 27px;
 }
 
 .human-parameters-data__container-input-text {
@@ -16,6 +17,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 37px;
 }
 
 .human-parameters-data__text {
@@ -26,6 +28,7 @@
   line-height: 18px;
   text-transform: uppercase;
   max-width: 226px;
+  margin-bottom: 39px;
 }
 
 .human-parameters-data__label {
@@ -80,21 +83,21 @@
 // tablet
 @media (min-width:@width-tablet) {
   .human-parameters-data__wrapper {
-    padding-right: 37px;
-    padding-left: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
+    .wrapper(padding-left);
+    margin-bottom: 72px;
   }
 
   .human-parameters-data__form-title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 54px;
   }
 
   .human-parameters-data__text {
     font-size: 20px;
     line-height: 30px;
     max-width: 323px;
+    margin-bottom: 66px;
   }
 
   .human-parameters-data__title {
@@ -111,5 +114,20 @@
   .select-programm__title {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .human-parameters-data__form-title {
+    grid-column-start: 1/ -1;
+  }
+
+  .human-parameters-data__label {
+
+    &:nth-of-type(n+1):not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
