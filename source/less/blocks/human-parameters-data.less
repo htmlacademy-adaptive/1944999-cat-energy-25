@@ -1,0 +1,133 @@
+.human-parameters-data {
+  .border-bottom();
+}
+
+.human-parameters-data__wrapper {
+  .wrapper ();
+  margin-bottom: 27px;
+}
+
+.human-parameters-data__container-input-text {
+  padding-bottom: 27px;
+}
+
+.human-parameters-data__form-title {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 37px;
+}
+
+.human-parameters-data__text {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  max-width: 226px;
+  margin-bottom: 39px;
+}
+
+.human-parameters-data__label {
+  display: flex;
+
+  &:nth-of-type(n+1):not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.human-parameters-data__title {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-right: 13px;
+}
+
+.human-parameters-data__input {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 45px;
+  width: 100%;
+  padding-left: 15px;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+
+  &::placeholder {
+    color: #444444;
+  }
+}
+
+.human-parameters__label {
+  display: flex;
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  align-items: center;
+}
+
+// tablet
+
+@media (min-width: @width-tablet) {
+  .human-parameters-data__wrapper {
+    .wrapper(padding-left);
+    margin-bottom: 72px;
+  }
+
+  .human-parameters-data__form-title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .human-parameters-data__text {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+    margin-bottom: 66px;
+  }
+
+  .human-parameters-data__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: auto 13px auto 0;
+  }
+
+  .human-parameters-data__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .select-programm__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .human-parameters-data__form-title {
+    grid-column-start: 1/ -1;
+  }
+
+  .human-parameters-data__label {
+    &:nth-of-type(n+1):not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

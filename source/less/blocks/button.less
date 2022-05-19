@@ -1,0 +1,35 @@
+.button {
+  font-family: @font-family-Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #68b738;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+
+//tablet
+
+@media (min-width: @width-tablet) {
+  .button {
+    font-size: 20px;
+    line-height: 0px;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

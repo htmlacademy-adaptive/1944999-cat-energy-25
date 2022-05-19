@@ -1,0 +1,47 @@
+.form-submit__wrapper {
+  .wrapper();
+}
+
+.form-submit__button {
+  margin-bottom: 21px;
+}
+
+.form-submit__comment {
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+//tablet
+
+@media (min-width: @width-tablet) {
+  .form-submit__wrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+
+  .form-submit__button {
+    width: 282px;
+    height: 52px;
+  }
+
+  .form-submit__comment {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+//desktop
+
+@media (min-width: @width-desktop) {
+  .form-submit {
+    grid-column: 2 span;
+  }
+
+  .form-submit__button {
+    width: max(568px);
+  }
+}
