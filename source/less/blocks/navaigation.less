@@ -1,5 +1,10 @@
 .navigation {
   box-sizing: border-box;
+  align-self: flex-start;
+}
+
+.navigation__wrapper {
+  padding-top: 3px;
 }
 
 .navigation__list {
@@ -32,13 +37,36 @@
   }
 }
 
+.navigation__toggle {
+  width: 24px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+
+  &::before {
+    display: inline;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 7px 0 0 #000000,
+      0 14px 0 0 #000000;
+  }
+}
+
 // tablet
 @media (min-width: @width-tablet) {
   .navigation {
     margin-left: auto;
   }
 
-  .navigation__menu-button {
+  .navigation__toggle {
     display: none;
   }
 
