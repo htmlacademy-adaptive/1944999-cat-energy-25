@@ -7,23 +7,38 @@
   .wrapper ();
   margin-bottom: 18px;
   display: flex;
-  height: 38px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__background {
   display: none;
 }
 
+.header__logo img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__logo-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 //tablet
 
 @media (min-width: @width-tablet) {
-  .header__wrapper {
-    display: flex;
-    padding: 0;
-  }
-
   .header__logo img {
     min-width: 174px;
     min-height: 51px;

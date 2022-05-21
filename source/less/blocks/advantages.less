@@ -82,9 +82,19 @@
     display: inline-block;
     content: "";
     width: 32px;
-    height: 11px;
+    height: 10px;
     background-image: url("../../img/index-icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: -8px;
     margin-left: 15px;
+  }
+
+  &:hover::after {
+    background-position: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

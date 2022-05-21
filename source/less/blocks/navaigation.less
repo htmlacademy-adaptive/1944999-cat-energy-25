@@ -58,6 +58,115 @@
     box-shadow: 0 7px 0 0 #000000,
       0 14px 0 0 #000000;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: @width-tablet) {
+  .navigation--open {
+    .navigation__list {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 57px;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      border-top: 1px solid #d9d9d9;
+    }
+
+    .navigation__item {
+      .border-bottom();
+      width: 100%;
+      padding: 22px 0 24px 0;
+      text-align: center;
+    }
+
+    .navigation__current::after {
+      display: none;
+    }
+
+    .navigation__link {
+      font-family: @font-family-Oswald;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    .navigation__toggle {
+      &::before {
+        box-shadow: none;
+        transform: rotate(-45deg);
+        top: 6px;
+      }
+
+      &::after {
+        display: inline;
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 6px;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background-color: #000000;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .navigation--nojs {
+
+    min-width: 100% + 15;
+    position: relative;
+    left: -20px;
+
+    .navigation__item {
+      .border-bottom();
+      width: 100%;
+      padding: 22px 0 24px 0;
+      text-align: center;
+    }
+
+    .navigation__current::after {
+      display: none;
+    }
+
+    .navigation__link {
+      font-family: @font-family-Oswald;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    .navigation__list {
+      display: block;
+      position: static;
+      width: 100%;
+      align-self: center;
+      margin: 0 auto;
+      border-top: 1px solid #d9d9d9;
+    }
+
+    .navigation__toggle {
+      display: none;
+    }
+  }
 }
 
 // tablet

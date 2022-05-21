@@ -75,7 +75,9 @@
   position: relative;
 }
 
-.form-additionally__label input:checked + .form-additionally__checkbox::before {
+/*Указаывает на ошибку в отсутсвии пробела до и после знака "+"*/
+/*stylelint-disable-next-line*/
+.form-additionally__label input:checked+.form-additionally__checkbox::before {
   display: inline-block;
   content: "";
   width: 24px;
@@ -84,7 +86,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-35%, -40%);
 }
 
 //tablet
@@ -138,7 +140,9 @@
     height: 40px;
   }
 
-  .form-additionally__label input:checked + .form-additionally__checkbox::before {
+  /*Указаывает на ошибку в отсутсвии пробела до и после знака "+"*/
+  /*stylelint-disable-next-line*/
+  .form-additionally__label input:checked+.form-additionally__checkbox::before {
     background: url("../../img/checkbox-select-tablet.svg") no-repeat;
   }
 }
