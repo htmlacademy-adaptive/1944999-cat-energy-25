@@ -19,6 +19,10 @@
   text-transform: uppercase;
   color: #222222;
   align-items: center;
+
+  &:active .select-programm__radio {
+    border: 1px solid #68b738;
+  }
 }
 
 .select-programm__radio {
@@ -29,9 +33,20 @@
   margin-right: 15px;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.16));
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+  }
 }
 
-.select-programm__label input:checked + .select-programm__radio::after {
+/* Ругается на необходимость пробелов до и после знака "+"*/
+/*stylelint-disable-next-line*/
+.select-programm__label input:checked+.select-programm__radio::after {
   display: inline-block;
   content: "";
   width: 13px;

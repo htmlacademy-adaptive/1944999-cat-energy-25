@@ -45,8 +45,6 @@
   grid-template-columns: auto auto;
   grid-template-rows: max-content max-content max-content;
   box-sizing: border-box;
-  margin-left: 38px;
-  margin-right: 38px;
 }
 
 .additional-product__name {
@@ -81,10 +79,6 @@
 //tablet
 
 @media (min-width: @width-tablet) {
-  .additional-product__wrapper {
-    padding: 0;
-  }
-
   .additional-product__title {
     font-size: 36px;
     line-height: 36px;
@@ -164,5 +158,11 @@
     width: 27%;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .additional-product__title {
+    &::before {
+      width: 70px;
+    }
   }
 }
