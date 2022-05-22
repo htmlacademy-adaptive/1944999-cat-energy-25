@@ -9,19 +9,17 @@
 
 .navigation__list {
   .list-reset();
-
   display: none;
+}
+
+.navigation__item {
+  position: relative;
   font-family: @font-family-Oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #000000;
-}
-
-.navigation__item {
-  position: relative;
 }
 
 .navigation__current {
@@ -189,6 +187,14 @@
   .navigation__link {
     text-decoration: none;
     color: #000000;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -202,6 +208,14 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6)
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .navigation__current--desktop {

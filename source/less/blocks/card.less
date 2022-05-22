@@ -18,7 +18,11 @@
   justify-self: center;
 }
 
-.card__title {
+.card__image-small {
+  object-fit: cover;
+}
+
+.card__image-big .card__title {
   font-family: @font-family-Oswald;
   font-style: normal;
   font-weight: 400;
@@ -58,6 +62,8 @@
     height: 172px;
     padding-top: 28px;
     margin-bottom: 34px;
+    position: relative;
+    top: -15px;
   }
 
   .card__image-big {
