@@ -120,6 +120,27 @@
   }
 }
 
+.form-contacts__icon {
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #222222;
+  stroke: #222222
+}
+
+.form-contacts__input:focus+.form-contacts__icon,
+.form-contacts__input:valid+.form-contacts__icon {
+  fill: #68b738;
+  stroke: #68b738;
+}
+
+.form-contacts__input:invalid+.form-contacts__icon {
+  fill: #ff8282;
+  stroke: #ff8282;
+}
+
+
 //tablet
 
 @media (min-width: @width-tablet) {
