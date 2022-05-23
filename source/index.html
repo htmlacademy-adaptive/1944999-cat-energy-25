@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="webmanifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body page__body--index-background">
@@ -119,9 +123,9 @@
         <div class="range__wrapper">
           <div class="range__image-container">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/index-cat-tablet.png">
-              <source media="(min-width: 768px)" srcset="img/index-cat-tablet.png">
-              <img class="range__image-before-cat" src="img/cat-before.png" alt="Кот" width="280" height="232">
+              <source media="(min-width: 768px)" srcset="img/index-cat-tablet.png 1x, img/index-cat-tablet@2x.png 2x">
+              <img class="range__image-before-cat" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" alt="Кот"
+                width="280" height="232">
             </picture>
           </div>
           <div class="range__container">
