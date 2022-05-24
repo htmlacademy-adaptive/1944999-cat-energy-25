@@ -6,11 +6,32 @@
   border: none;
 }
 
+svg use {
+  width: 30px;
+  height: 30px;
+}
+
 .social-network__wrapper {
   .wrapper ();
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.social-network__link {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.social-network__icon {
+  fill: inherit;
 }
 
 .social-network__logo-cat {
@@ -62,44 +83,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &::after {
-    display: inline-block;
-    content: "";
-    width: 27px;
-    height: 34px;
-    background: url("../../img/logo-htmlacademy-label.svg") no-repeat center;
-    margin-left: 22px;
-  }
+  gap: 22px;
 
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 
-.social-network__icon {
-  display: inline-block;
-  width: 28px;
-  height: 22px;
-}
+.social-network__logo-htmlacademy-label {
+  fill: #666666;
 
-.social-network__ {
-  &vkontakte {
-    background: url("../../img/social-icon.svg") no-repeat -1px -3px;
-  }
-
-  &youtube {
-    background: url("../../img/social-icon.svg") no-repeat -36px -2px;
-  }
-
-  &telegramm {
-    background: url("../../img/social-icon.svg") no-repeat -70px -1px;
+  .social-network__logo-htmlacademy:hover & {
+    fill: #68b738;
   }
 }
+
 
 // tablet
 @media (min-width: @width-tablet) {

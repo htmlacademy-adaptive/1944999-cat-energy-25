@@ -37,7 +37,7 @@
               <a class="navigation__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-          <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть закрыть меню</span>
           </button>
         </div>
       </nav>
@@ -98,16 +98,22 @@
           <ul class="form-contacts__list">
             <li class="form-contacts__item">
               <label class="form-contacts__label">
-                <p class="form-contacts__text form-contacts__text--email">E-mail:*</p>
+                <p class="form-contacts__text">E-mail:*</p>
                 <input class="form-contacts__input" type="email" name="e-mail" placeholder="KUKLACHEV@GMAIL.COM"
                   required>
+                <svg class="form-contacts__icon" width="19" height="14" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
               </label>
             </li>
             <li class="form-contacts__item">
               <label class="form-contacts__label">
-                <p class="form-contacts__text  form-contacts__text--phone">Телефон:*</p>
+                <p class="form-contacts__text">Телефон:*</p>
                 <input class="form-contacts__input" type="number" name="number-phone" placeholder="8 (960) 900-60-90"
                   required>
+                <svg class="form-contacts__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
               </label>
             </li>
           </ul>
@@ -175,7 +181,7 @@
   </main>
 
 
-  <footer class="footer footer--form">
+  <footer class="footer">
     <div class="footer__wrapper">
       <h2 class="visually-hidden">Раздел с контактами.</h2>
 
@@ -196,25 +202,38 @@
         <div class="social-network__border-container">
           <ul class="social-network__list">
             <li class="social-network__item">
-              <a class="social-network__icon social-network__vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
+              <a class="social-network__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Социальная сеть вконтакте HTML Academy</span>
+                <svg class="social-network__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#vkontakte"></use>
+                </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a class="social-network__icon social-network__youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
+              <a class="social-network__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Видеохостинг ютуб HTML Academy</span>
+                <svg class="social-network__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a class="social-network__icon social-network__telegramm" href="tg://resolve?domain=htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
+              <a class="social-network__link" href="tg://resolve?domain=htmlacademy">
+                <span class="visually-hidden">Месенджер телеграмм HTML Academy</span>
+                <svg class="social-network__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#telegramm"></use>
+                </svg>
               </a>
             </li>
           </ul>
+
         </div>
         <div class="social-network__logo-container">
           <a class="social-network__logo-htmlacademy" href="https://htmlacademy.ru/study">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии." width="114" height="18">
+            <svg class="social-network__logo-htmlacademy-label" width="27" height="34">
+              <use xlink:href="img/sprite.svg#logo-htnlacademy-label"></use>
+            </svg>
           </a>
         </div>
       </div>
